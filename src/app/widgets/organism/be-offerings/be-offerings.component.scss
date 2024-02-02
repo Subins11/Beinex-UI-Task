@@ -1,0 +1,82 @@
+@import "../../../../assets/scss/mixins";
+
+.be-offerings {
+  margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom, rgba(0, 137, 184, 1), rgba(1, 44, 109, 1));
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 40px;
+    color: #fff;
+  }
+}
+.be-btn {
+
+  &__offer{
+    margin: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+img{
+  margin-left: 5px;
+}
+
+@include laptops{
+
+  .be-offerings {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      padding-top: 20px;
+    }
+    .be-btn {
+      .be-btn--offer {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .be-offerings {
+    height: auto;
+    h1 {
+      font-size: 20px;
+      padding-top: 10px;
+    }
+  }
+  .be-btn {
+    &__offer {
+      margin: 10px;
+    }
+  }
+}
+
+@include mobile {
+  .be-offerings {
+    height: auto;
+    h1 {
+      font-size: 20px;
+      padding-top: 10px;
+    }
+  }
+  .be-btn {
+    &__offer {
+      margin: 20px;
+    }
+  }
+}

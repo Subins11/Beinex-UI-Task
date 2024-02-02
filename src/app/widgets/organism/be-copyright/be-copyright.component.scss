@@ -1,0 +1,38 @@
+.be-copyright {
+    width: 100%;
+    height: auto;
+    background-color: #150d2b;
+  
+    .be-policy {
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0px auto;
+      padding-top: 20px;
+      color: #fff;
+  
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        opacity: 80%;
+      }
+    }
+    .be-social {
+      width: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 20px auto;
+    }
+    .be-copyrighttxt {
+      color: #fff;
+      text-align: center;
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        opacity: 60%;
+      }
+    }
+  }
+  

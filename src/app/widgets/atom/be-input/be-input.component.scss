@@ -1,0 +1,67 @@
+@import "../../../../assets/scss/mixins";
+
+input {
+  width: 302px;
+  height: 35px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 10px;
+  &__sub{
+    width: 386px;
+    height: 42px;
+}
+&__phone{
+    width: 200px;
+    height: 35px;
+}
+.invalid{
+    border: 1px solid red;
+}
+}
+
+
+
+
+@include laptops{
+    input {
+        width: 420px;
+        font-size: 12px;
+        .be-input__sub{
+            width: 386px;
+            height: 42px;
+        }
+      }
+}
+@include tablet {
+  input {
+    width: 500px;
+    font-size: 12px;
+    height: 42px;
+    margin-right: 0px;
+    padding: 5px;
+
+    .be-input__sub{
+        width: 250px;
+        height: 42px;
+    }   
+  }
+}
+
+@include mobile {
+  input {
+    width: 300px;
+    height: 42px;
+    font-size: 10px;
+    height: 25px;
+    margin-top: 10px;
+
+    .be-input__sub{
+        width: 300px;
+        height: 40px;
+    }
+  }
+}

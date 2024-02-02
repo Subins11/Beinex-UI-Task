@@ -1,0 +1,74 @@
+@import "../../../../assets/scss/mixins";
+
+.be--btn {
+  width: 140px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 12px;
+  border: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    margin-right: 10px;
+  }
+
+  &__form{
+    flex-direction: row-reverse;
+    margin-left: 10px;
+  }
+  &__call {
+    margin-left: 20px;
+  }
+  &__offer{
+    flex-direction: row-reverse;
+  }
+}
+.be--btn:hover {
+  background-color: #ffffff;
+  color: #10385b;
+  border: 1px solid #10385b;
+}
+
+
+@include laptops {
+  .be--btn {
+    width: 140px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 10px;
+    
+    &__offer{
+      margin: 20px;
+    }
+  }
+}
+
+@include tablet {
+  .be--btn {
+    width: 120px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 10px;
+    &__form{
+      flex-direction: row-reverse;
+      margin-left: 20px;
+    }
+    &__offer{
+      margin: 20px;
+    }
+  }
+}
+
+@include mobile {
+  .be--btn {
+    width: 80px;
+    height: 25px;
+    font-weight: 400;
+    font-size: 8px;
+    &__offer{
+      margin: 20px;
+    }
+  }
+}

@@ -1,0 +1,230 @@
+@import "../../../../assets/scss/mixins";
+
+.be-model {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+
+  .be-cover {
+    width: 630px;
+    height: auto;
+    background-image: url(../../../../assets/images/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__contents {
+      width: 80%;
+      padding-left: 50px;
+      padding-top: 250px;
+
+      h1 {
+        color: #10385b;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 44px;
+      }
+      h6 {
+        color: #666;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 10px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .be-forms {
+    width: 680px;
+    height: auto;
+    margin-left: 20px;
+    &__input {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 14px;
+      margin: 10px;
+
+      .errors{
+        color: red;
+        font-size: 8px;
+        position: static;
+      }
+      .iconSize {
+        img {
+          width: 5px;
+          height: 5px;
+        }
+      }
+    }
+    &__textarea {
+      margin-left: 10px;
+      h6 {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px;
+      }
+      .be-upload {
+        display: flex;
+        margin-top: 10px;
+
+        h6 {
+          width: 400px;
+        }
+        input[type="file"] {
+          color: transparent;
+          margin-top: 0px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include laptops {
+  .be-model {
+    .be-cover {
+      width: 45%;
+      height: auto;
+
+      &__contents {
+        width: 80%;
+        padding-left: 50px;
+        padding-top: 250px;
+      }
+    }
+
+    .be-forms {
+      width: 45%;
+      height: auto;
+      margin-left: 20px;
+      &__input {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+      }
+      &__textarea {
+        margin-left: 10px;
+        h6 {
+          font-size: 14px;
+          font-weight: 400;
+          padding: 5px;
+        }
+        .be-upload {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+
+          input[type="file"] {
+            color: transparent;
+            margin-top: 5px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .be-model {
+    .be-cover {
+      width: 100%;
+      height: auto;
+      margin-left: 0px;
+
+      &__contents {
+        padding-top: 150px;
+
+        h1 {
+          font-size: 30px;
+          line-height: 30px;
+        }
+        h6 {
+          font-size: 14px;
+          padding-bottom: 20px;
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .be-forms {
+      width: 100%;
+      height: auto;
+      margin-left: 20px;
+      &__input {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+      }
+      &__textarea {
+        margin-left: 0px;
+        h6 {
+          font-size: 12px;
+          padding-left: 10px;
+        }
+        .be-upload {
+            display: flex;
+            margin-top: 10px;
+    
+            h6 {
+              width: 300px;
+              
+            }
+            input[type="file"] {
+              color: transparent;
+              margin-top: 0px;
+              margin-bottom: 20px;
+            }
+          }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .be-model {
+    .be-cover {
+      width: 100%;
+      height: auto;
+      margin-left: 0px;
+
+      &__contents {
+        padding-top: 150px;
+
+        h1 {
+          font-size: 30px;
+          line-height: 30px;
+        }
+        h6 {
+          font-size: 14px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    .be-forms {
+      width: 100%;
+      height: auto;
+      margin-left: 20px;
+      &__input {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 20px;
+      }
+      &__textarea {
+        margin-left: 0px;
+        h6 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

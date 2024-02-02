@@ -1,0 +1,31 @@
+<div class="be-offerings__cards">
+    <div class="be-offerings__card">
+      <h4>Industry</h4>
+      <ul class="selected">
+        <li *ngFor="let list of industry">
+          <img src="{{ list.icon }}" alt="" />
+          {{ list.label }}
+          <img class="card--arrow" src="{{ list.sign }}" />
+        </li>
+      </ul>
+    </div>
+    <div class="be-offerings__card be-offerings__card--2">
+      <h4>Offerings</h4>
+      <ul>
+        <li *ngFor="let offers of offerings">
+          {{ offers.label }}
+          <img class="card--arrow" src="{{ offers.sign }}" />
+        </li>
+      </ul>
+    </div>
+    <div class="be-offerings__card be-offerings__card--3">
+      <h4>Description</h4>
+      <p>
+        Predictive analytics is often applied here and for prediction of future
+        possible relevant matters for tickets. Data science optimises these
+        processes helping the companies to improve customer satisfaction rates and
+        avoid previous mistakes.
+      </p>
+    </div>
+  </div>
+  

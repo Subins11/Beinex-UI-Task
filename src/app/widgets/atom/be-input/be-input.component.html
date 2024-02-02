@@ -1,0 +1,11 @@
+<input
+  [class]="class"
+  [type]="'text'"
+  [placeholder]="placeholder"
+  [style.background-image]="'url(' + imageUrl + ')'"
+  [style]="style"
+  [formControl]="formControl"
+  [style.width]="width"
+  [style.height]="height"
+  [ngClass]="{'invalid': formControl.touched && formControl.invalid}"
+/>

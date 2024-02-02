@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-demo-app';
-  intern = 'FE Internship Session'
+  title = 'Beinex Task';
 }

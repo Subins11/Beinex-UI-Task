@@ -1,0 +1,91 @@
+<div class="be-model">
+    <div class="be-cover">
+      <div class="be-cover__contents">
+        <h1>Just Don't Wait! Let's Connect.</h1>
+        <h6>
+          No matter what industry your business is in, we are here to provide you
+          with incomparable services that fit your needs perfectly. Feel free to
+          connect with us and have a chat with our team.
+        </h6>
+        <h6>Happy to be of assistance!</h6>
+      </div>
+    </div>
+    <div class="be-forms">
+      <form [formGroup]="myForm">
+        <div class="be-forms__input">
+          <app-be-input
+            [class]="'be--input be--input__form'"
+            [type]="'text'"
+            [placeholder]="'Name'"
+            [imageUrl]="'../../../../assets/icons/name.svg'"
+            [formControlName]="'name'"
+          ></app-be-input>
+          <app-be-input
+            [class]="'be--input be--input__form'"
+            [type]="'text'"
+            [placeholder]="'Company'"
+            [imageUrl]="'../../../../assets/icons/company.svg'"
+            [formControlName]="'company'"
+          ></app-be-input>
+         <app-be-input
+            [class]="'be--input be--input__form'"
+            [type]="'email'"
+            [placeholder]="'Email'"
+            [imageUrl]="'../../../../assets/icons/email.svg'"
+            [formControlName]="'email'"
+          ></app-be-input>
+         <app-be-input
+            [class]="'be--input be--input__form'"
+            [type]="'text'"
+            [placeholder]="'Job Role'"
+            [imageUrl]="'../../../../assets/icons/jobRole.svg'"
+            [formControlName]="'jobRole'"
+          ></app-be-input>
+           <app-be-input
+              [class]="'be--input'"
+              [type]="'tel'"
+              [placeholder]="'Code | Phone Number'"
+              [imageUrl]="'../../../../assets/icons/phone.svg'"
+              [formControlName]="'phone'"
+            ></app-be-input>
+           <app-be-input
+            [class]="'be--input'"
+            [type]="'tel'"
+            [placeholder]="'Country'"
+            [imageUrl]="'../../../../assets/icons/country.svg'"
+            [formControlName]="'country'"
+          ></app-be-input>
+        </div>
+        <div class="be-forms__textarea">
+          <app-be-text-area
+            [placeholder]="'Your message for us..'"
+            [imageUrl]="'../../../../assets/icons/message.svg'"
+            [formControlName]="'message'"
+          ></app-be-text-area>
+          <h6>What are you looking for?</h6>
+          <app-be-badges
+          
+          ></app-be-badges>
+          <h6>What you think we should know about you or your project:</h6>
+          <app-be-text-area
+            [placeholder]="'Your text here...'"
+            [formControlName]="'aboutProject'"
+          ></app-be-text-area>
+          <div class="be-upload">
+            <h6>Upload more info as a MS.Word or PDF file</h6>
+            <input type="file" value="Select Files" [formControlName]="'image'" />
+          </div>
+        </div>
+        <app-be-button
+          [class]="'be--btn be--btn__form'"
+          [text]="'Submit'"
+          [backgroundColor]="'rgba(16, 56, 91, 1)'"
+          [textColor]="'#fff'"
+          (buttonClick)="onSubmit()"
+          [icon]="'../../../../assets/icons/submitArrow.svg'"
+          [disabled]="myForm.invalid"
+        ></app-be-button>
+      </form>
+    </div>
+  </div>
+  

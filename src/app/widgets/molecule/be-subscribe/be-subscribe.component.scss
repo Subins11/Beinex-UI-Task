@@ -1,0 +1,118 @@
+@import "../../../../assets/scss/mixins";
+
+.be-subscribe {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  margin-left: 50px;
+  background-color: #1d7ad0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+
+  &__left {
+    color: #fff;
+    margin-right: 100px;
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: normal;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+
+    button {
+      width: 42px;
+      height: 42px;
+      background-color: #10385b;
+      margin-top: 10px;
+      border: none;
+      position: relative;
+      right: 30px;
+    }
+  }
+}
+
+@include laptops {
+    .be-subscribe {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-top: 0px;
+        position: absolute;
+        &__left {
+          margin-right: 50px;
+          color: #fff;
+    
+          h4 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .be-subscribe__form {
+          display: flex;
+        }
+      }
+}
+
+@include tablet {
+  .be-subscribe {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    &__left {
+      color: #fff;
+      margin-right: 0px;
+      h4 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .be-subscribe__form {
+      display: flex;
+    }
+  }
+}
+
+@include mobile {
+  .be-subscribe {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    &__left {
+      color: #fff;
+      margin-right: 0px;
+      h4 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .be-subscribe__form {
+      display: flex;
+    }
+    button {
+        width: 42px;
+        height: 30px;
+        background-color: #10385b;
+        margin-top: 10px;
+        border: none;
+        position: relative;
+        right: 30px;
+      }
+  }
+}

@@ -1,0 +1,88 @@
+@import "../../../../assets/scss/mixins";
+
+.be-globalcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+
+  .be-globalcard {
+    width: 165px;
+    height: auto;
+    align-items: start;
+    margin-top: 50px;
+    margin-left: 86px;
+
+    h4 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+@include laptops{
+  .be-globalcards {  
+    .be-globalcard {
+      width: 150px;
+      height: auto;
+      margin-top: 20px;
+      margin-left: 20px;
+  
+      h4 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 12px;
+
+      }
+    }
+  }
+}
+
+
+@include tablet {
+  .be-globalcards {
+    .be-globalcard {
+      width: 140px;
+      height: 180px;
+      margin-top: 20px;
+      margin-left: 0px;
+
+      h4 {
+        font-size: 12px;
+        padding-left: 10px;
+      }
+      p {
+        font-size: 10px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .be-globalcards {
+    .be-globalcard {
+      width: auto;
+      height: 120px;
+      margin-top: 20px;
+      margin-left: 10px;
+      h4 {
+        font-size: 14px;
+        padding-left: 10px;
+      }
+      p {
+        font-size: 12px;
+        padding: 5px;
+      }
+    }
+  }
+}

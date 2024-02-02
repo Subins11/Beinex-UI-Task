@@ -1,0 +1,8 @@
+<div class="be-globalcards">
+    <div class="be-globalcard" *ngFor="let country of countries">
+      <img [src]="country.flag" alt="{{ country.name }}" />
+      <h4>{{ country.name }}</h4>
+      <p>{{ country.address }}</p>
+    </div>
+  </div>
+  

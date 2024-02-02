@@ -1,0 +1,27 @@
+@import "../../../../assets/scss/mixins";
+
+.be-line{
+    width: 1px;
+    height: 250px;
+    background-color: #fff;
+    margin-top: 150px;
+    opacity: 20%;
+}
+
+@include laptops{
+    .be-line{
+        display: none;
+    }
+}
+
+@include mobile{
+    .be-line{
+        display: none;
+    }
+}
+
+@include tablet{
+    .be-line{
+        display: none;
+    }
+}
